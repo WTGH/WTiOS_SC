@@ -1,0 +1,1150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2VA-Od-DVj">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EfP-WB-U6u">
+            <objects>
+                <viewController id="2VA-Od-DVj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="W4Z-9J-w0H"/>
+                        <viewControllerLayoutGuide type="bottom" id="DbO-Fp-KpL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iTh-al-558">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="runnerBG" translatesAutoresizingMaskIntoConstraints="NO" id="I6x-Oc-4gz">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="logoBlack" translatesAutoresizingMaskIntoConstraints="NO" id="RAS-79-WTa">
+                                <rect key="frame" x="50" y="225" width="500" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RAS-79-WTa" secondAttribute="height" multiplier="10:3" id="FMf-yj-sSp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DbO-Fp-KpL" firstAttribute="top" secondItem="I6x-Oc-4gz" secondAttribute="bottom" id="1mP-nc-PU8"/>
+                            <constraint firstItem="RAS-79-WTa" firstAttribute="centerY" secondItem="iTh-al-558" secondAttribute="centerY" id="5JS-yp-b2I"/>
+                            <constraint firstItem="I6x-Oc-4gz" firstAttribute="top" secondItem="iTh-al-558" secondAttribute="top" id="JPI-cd-QG1"/>
+                            <constraint firstItem="RAS-79-WTa" firstAttribute="centerX" secondItem="iTh-al-558" secondAttribute="centerX" id="VUb-By-p9Z"/>
+                            <constraint firstItem="I6x-Oc-4gz" firstAttribute="leading" secondItem="iTh-al-558" secondAttribute="leading" id="f2d-M2-PhO"/>
+                            <constraint firstAttribute="trailing" secondItem="I6x-Oc-4gz" secondAttribute="trailing" id="rjJ-MD-tcj"/>
+                            <constraint firstItem="RAS-79-WTa" firstAttribute="height" secondItem="iTh-al-558" secondAttribute="height" multiplier="0.25" id="ySP-tl-JdI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CTW-L4-ROd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1627" y="252"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="M2G-4p-5kW">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="sZv-Un-zab" customClass="LoginViewController" customModule="WeTrain" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H8Y-I2-Sk3"/>
+                        <viewControllerLayoutGuide type="bottom" id="CBb-dE-iX3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jcu-px-vpY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="LoginBg" translatesAutoresizingMaskIntoConstraints="NO" id="ftZ-J0-rW4">
+                                <rect key="frame" x="16" y="20" width="568" height="155"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ftZ-J0-rW4" secondAttribute="height" multiplier="9:2" constant="-129.5" id="WgV-zs-4aA">
+                                        <variation key="widthClass=compact" constant="-365"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="logoBlack" translatesAutoresizingMaskIntoConstraints="NO" id="KqT-OP-ksi">
+                                <rect key="frame" x="16" y="20" width="568" height="155"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hTk-db-u46" userLabel="View - name">
+                                <rect key="frame" x="-1" y="183" width="602" height="40"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kxj-tp-d5Y">
+                                        <rect key="frame" x="1" y="-183" width="39" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="oSU-6L-5tn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="oSU-6L-5tn"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="oSU-6L-5tn"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <outlet property="delegate" destination="sZv-Un-zab" id="8lp-On-bJz"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Kxj-tp-d5Y" secondAttribute="trailing" constant="21" id="8UQ-WI-84p"/>
+                                    <constraint firstAttribute="height" constant="40" id="Fju-gh-BVk"/>
+                                    <constraint firstItem="Kxj-tp-d5Y" firstAttribute="leading" secondItem="hTk-db-u46" secondAttribute="leading" constant="21" id="HpA-Wi-Cth"/>
+                                    <constraint firstItem="Kxj-tp-d5Y" firstAttribute="top" secondItem="hTk-db-u46" secondAttribute="top" id="SUQ-q5-5g6"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8UQ-WI-84p"/>
+                                        <exclude reference="HpA-Wi-Cth"/>
+                                        <exclude reference="SUQ-q5-5g6"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="8UQ-WI-84p"/>
+                                        <include reference="HpA-Wi-Cth"/>
+                                        <include reference="SUQ-q5-5g6"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MS9-mM-STD" userLabel="View - password">
+                                <rect key="frame" x="-1" y="222" width="602" height="40"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="981-hP-HSD">
+                                        <rect key="frame" x="1" y="-222" width="67" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Rfm-jn-1go"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Rfm-jn-1go"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="Rfm-jn-1go"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <outlet property="delegate" destination="sZv-Un-zab" id="ypX-fl-bVe"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="981-hP-HSD" secondAttribute="trailing" constant="21" id="HaJ-td-T8d"/>
+                                    <constraint firstAttribute="height" constant="40" id="IyH-e4-iLu"/>
+                                    <constraint firstItem="981-hP-HSD" firstAttribute="top" secondItem="MS9-mM-STD" secondAttribute="top" id="TBu-M0-SZ9"/>
+                                    <constraint firstItem="981-hP-HSD" firstAttribute="leading" secondItem="MS9-mM-STD" secondAttribute="leading" constant="21" id="eVa-3x-f7j"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="HaJ-td-T8d"/>
+                                        <exclude reference="TBu-M0-SZ9"/>
+                                        <exclude reference="eVa-3x-f7j"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="HaJ-td-T8d"/>
+                                        <include reference="TBu-M0-SZ9"/>
+                                        <include reference="eVa-3x-f7j"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0b-rH-MOx">
+                                <rect key="frame" x="0.0" y="270" width="600" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HAa-hK-olO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="Login" backgroundImage="buttonRectBg">
+                                    <color key="titleColor" red="0.058823529409999999" green="0.0" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="buttonRectSelBg"/>
+                                <connections>
+                                    <action selector="didClickLogin:" destination="sZv-Un-zab" eventType="touchUpInside" id="JLZ-P9-Mos"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEr-Vm-Dht">
+                                <rect key="frame" x="0.0" y="329" width="600" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="FIl-H8-cVF"/>
+                                    <constraint firstAttribute="height" constant="50" id="RA8-gC-ZcW"/>
+                                    <constraint firstAttribute="width" constant="600" id="lLG-vD-JRr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="45" maxY="0.0"/>
+                                <state key="normal" title="Login with Facebook" backgroundImage="fbLoginButtonBg">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="fbLoginButtonSelBg"/>
+                                <connections>
+                                    <action selector="didClickFacebookLogin" destination="sZv-Un-zab" eventType="touchUpInside" id="FWl-3T-Sv5"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fbIcon" translatesAutoresizingMaskIntoConstraints="NO" id="UfH-sb-hUw">
+                                <rect key="frame" x="177" y="336" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="2SL-al-Mvx"/>
+                                    <constraint firstAttribute="height" constant="35" id="PfD-oG-8S1"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2J-zK-hZi">
+                                <rect key="frame" x="0.0" y="270" width="600" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4eU-w3-UcS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Forgot my password">
+                                    <color key="titleColor" red="1" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4eU-w3-UcS"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="4eU-w3-UcS"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="didClickForgotPassword" destination="sZv-Un-zab" eventType="touchUpInside" id="ebO-gS-GuE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KqT-OP-ksi" firstAttribute="bottom" secondItem="ftZ-J0-rW4" secondAttribute="bottom" id="5Su-3I-yOY">
+                                <variation key="widthClass=compact" constant="-10"/>
+                            </constraint>
+                            <constraint firstItem="UfH-sb-hUw" firstAttribute="top" secondItem="PEr-Vm-Dht" secondAttribute="top" constant="7" id="6fV-Ss-pTO"/>
+                            <constraint firstItem="P0b-rH-MOx" firstAttribute="top" secondItem="MS9-mM-STD" secondAttribute="bottom" constant="8" symbolic="YES" id="7Lg-Jz-erC">
+                                <variation key="widthClass=compact" constant="18"/>
+                            </constraint>
+                            <constraint firstItem="UfH-sb-hUw" firstAttribute="centerX" secondItem="PEr-Vm-Dht" secondAttribute="centerX" constant="-106" id="9NY-s4-uH6"/>
+                            <constraint firstItem="KqT-OP-ksi" firstAttribute="trailing" secondItem="ftZ-J0-rW4" secondAttribute="trailing" id="A8c-YK-fkJ"/>
+                            <constraint firstAttribute="trailing" secondItem="PEr-Vm-Dht" secondAttribute="trailing" id="BfL-2G-U43">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-2"/>
+                            </constraint>
+                            <constraint firstItem="hTk-db-u46" firstAttribute="top" secondItem="ftZ-J0-rW4" secondAttribute="bottom" constant="8" id="EH8-No-qLP">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="ftZ-J0-rW4" secondAttribute="trailing" constant="-4" id="Fv0-6J-8Yh">
+                                <variation key="widthClass=compact" constant="-20"/>
+                            </constraint>
+                            <constraint firstItem="PEr-Vm-Dht" firstAttribute="top" secondItem="P0b-rH-MOx" secondAttribute="bottom" constant="9" id="GBg-Tk-Cew"/>
+                            <constraint firstItem="KqT-OP-ksi" firstAttribute="leading" secondItem="ftZ-J0-rW4" secondAttribute="leading" id="Kdc-C1-Oii"/>
+                            <constraint firstItem="P0b-rH-MOx" firstAttribute="leading" secondItem="Jcu-px-vpY" secondAttribute="leading" id="LiR-QM-xi1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hTk-db-u46" secondAttribute="trailing" constant="-21" id="N1D-zi-P0O"/>
+                            <constraint firstItem="MS9-mM-STD" firstAttribute="leading" secondItem="Jcu-px-vpY" secondAttribute="leadingMargin" constant="-21" id="Oe6-iL-G4C"/>
+                            <constraint firstItem="y2J-zK-hZi" firstAttribute="top" secondItem="PEr-Vm-Dht" secondAttribute="bottom" constant="9" id="T8q-hd-fHA"/>
+                            <constraint firstAttribute="trailing" secondItem="P0b-rH-MOx" secondAttribute="trailing" id="U1c-JH-t58"/>
+                            <constraint firstItem="ftZ-J0-rW4" firstAttribute="leading" secondItem="Jcu-px-vpY" secondAttribute="leadingMargin" constant="-4" id="W4w-5A-wSD">
+                                <variation key="widthClass=compact" constant="-20"/>
+                            </constraint>
+                            <constraint firstItem="ftZ-J0-rW4" firstAttribute="top" secondItem="H8Y-I2-Sk3" secondAttribute="bottom" id="Wbo-mV-h1H"/>
+                            <constraint firstItem="KqT-OP-ksi" firstAttribute="top" secondItem="ftZ-J0-rW4" secondAttribute="top" id="ec4-0X-Wkg"/>
+                            <constraint firstItem="hTk-db-u46" firstAttribute="leading" secondItem="Jcu-px-vpY" secondAttribute="leadingMargin" constant="-21" id="fBh-Ev-wAS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MS9-mM-STD" secondAttribute="trailing" constant="-21" id="sse-td-rmN"/>
+                            <constraint firstAttribute="trailing" secondItem="y2J-zK-hZi" secondAttribute="trailing" id="teS-3Z-n81"/>
+                            <constraint firstItem="MS9-mM-STD" firstAttribute="top" secondItem="hTk-db-u46" secondAttribute="bottom" constant="-1" id="vH1-y9-1oq"/>
+                            <constraint firstItem="PEr-Vm-Dht" firstAttribute="leading" secondItem="Jcu-px-vpY" secondAttribute="leading" id="ycW-Eq-dTb">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-2"/>
+                            </constraint>
+                            <constraint firstItem="y2J-zK-hZi" firstAttribute="leading" secondItem="Jcu-px-vpY" secondAttribute="leading" id="ynu-rM-PON"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="KqT-OP-ksi"/>
+                                <exclude reference="y2J-zK-hZi"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="5Su-3I-yOY"/>
+                                <exclude reference="A8c-YK-fkJ"/>
+                                <exclude reference="Kdc-C1-Oii"/>
+                                <exclude reference="ec4-0X-Wkg"/>
+                                <exclude reference="T8q-hd-fHA"/>
+                                <exclude reference="teS-3Z-n81"/>
+                                <exclude reference="ynu-rM-PON"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="KqT-OP-ksi"/>
+                                <include reference="y2J-zK-hZi"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="5Su-3I-yOY"/>
+                                <include reference="A8c-YK-fkJ"/>
+                                <include reference="Kdc-C1-Oii"/>
+                                <include reference="ec4-0X-Wkg"/>
+                                <include reference="T8q-hd-fHA"/>
+                                <include reference="teS-3Z-n81"/>
+                                <include reference="ynu-rM-PON"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="buttonLogin" destination="P0b-rH-MOx" id="NsG-Cf-x2A"/>
+                        <outlet property="inputLogin" destination="Kxj-tp-d5Y" id="WtO-iW-kGL"/>
+                        <outlet property="inputPassword" destination="981-hP-HSD" id="f86-e4-NqW"/>
+                        <segue destination="civ-Bp-HRs" kind="push" identifier="GoToUserInfo" id="a1O-Ae-xve"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zqY-jV-McV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-964" y="252"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aOP-YW-pSk">
+            <objects>
+                <navigationController storyboardIdentifier="SignupNavigationController" id="T7u-1k-qWh" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fMH-TM-onf"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rBm-8g-qhU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kEv-e0-lgh" kind="relationship" relationship="rootViewController" id="awz-4d-JDb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TPY-XF-EIO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-221" y="252"/>
+        </scene>
+        <!--Sign Up-->
+        <scene sceneID="B3l-5b-gJp">
+            <objects>
+                <viewController storyboardIdentifier="SignupViewController" id="kEv-e0-lgh" customClass="SignupViewController" customModule="WeTrain" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2OZ-ov-wY1"/>
+                        <viewControllerLayoutGuide type="bottom" id="wiT-Ef-HFy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4kw-TC-Omx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1lh-9f-MYB">
+                                <rect key="frame" x="0.0" y="20" width="600" height="770"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UG0-RT-boq">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="688"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03j-8r-MkA">
+                                                <rect key="frame" x="20" y="15" width="560" height="50"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="HuM-IE-8eF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="25" maxY="0.0"/>
+                                                <state key="normal" title="Sign in with Facebook" backgroundImage="fbLoginButtonBg">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted" backgroundImage="fbLoginButtonSelBg"/>
+                                                <connections>
+                                                    <action selector="didClickFacebookSignUp:" destination="kEv-e0-lgh" eventType="touchUpInside" id="And-DS-ZwN"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fbIcon" translatesAutoresizingMaskIntoConstraints="NO" id="JfQ-eu-u5Q">
+                                                <rect key="frame" x="178" y="22" width="35" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="2M0-zt-Pzr"/>
+                                                    <constraint firstAttribute="height" constant="35" id="EcI-qF-LXE"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or create username and password" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ppi-Bc-a9Q">
+                                                <rect key="frame" x="20" y="84" width="560" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="6ZP-CE-uTb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X6u-yA-wIw">
+                                                <rect key="frame" x="20" y="117" width="560" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="Ubq-hi-snm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="kEv-e0-lgh" id="d6d-0e-Gon"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8q1-cH-lDe">
+                                                <rect key="frame" x="20" y="155" width="560" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="DDN-G1-9Fv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="kEv-e0-lgh" id="K7k-Te-Ol9"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j2Y-V2-eRs">
+                                                <rect key="frame" x="20" y="193" width="560" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="OEd-BT-2pr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="kEv-e0-lgh" id="56P-Hg-n0h"/>
+                                                </connections>
+                                            </textField>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGq-i0-vlR">
+                                                <rect key="frame" x="20" y="239" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="Jdg-OJ-ngG"/>
+                                                    <constraint firstAttribute="height" constant="30" id="mzq-qX-lcW"/>
+                                                </constraints>
+                                                <state key="normal" image="boxChecked"/>
+                                                <connections>
+                                                    <action selector="didClickCheck:" destination="kEv-e0-lgh" eventType="touchUpInside" id="x32-Wa-IId"/>
+                                                </connections>
+                                            </button>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have read and agree to the Terms of Service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qfM-8h-CNY">
+                                                <rect key="frame" x="58" y="243" width="522" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="3g7-yn-TZ0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQ9-En-Jdc">
+                                                <rect key="frame" x="20" y="239" width="560" height="30"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="dEy-FS-AgV"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="didClickCheck:" destination="kEv-e0-lgh" eventType="touchUpInside" id="5KT-tG-sW4"/>
+                                                </connections>
+                                            </button>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsb-Fb-x4f">
+                                                <rect key="frame" x="20" y="294" width="560" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="OHF-3B-54T"/>
+                                                </constraints>
+                                                <string key="text">Privacy &amp; Terms of Service
+</string>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rcc-2P-9eH">
+                                                <rect key="frame" x="20" y="340" width="560" height="288"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <string key="text">I have volunteered to participate in the Services (the “Services” as defined in the Terms and Conditions Agreement) provided to me by WeTrain, LLC  (“Company”) through the Company’s third party providers of such Services, which may include, but may not be limited to, resistance training, aerobic training, mobility training, or cardiovascular exercise. In consideration of the Company’s agreement to provide the Services through the Company’s third party providers, I do here now and forever release and discharge and hereby hold harmless the Company and their third party providers, respective agents, heirs, assigns, contractors, and employees from any and all claims, demands, damages, rights of action or causes of action, present or future, arising out of or connected with the Services and/or my participation in this or any exercise program including any injuries resulting there from.
+ 
+THIS WAIVER AND RELEASE OF LIABILITY INCLUDES, WITHOUT LIMITATION, INJURIES WHICH MAY OCCUR AS A RESULT OF (1) EQUIPMENT BELONGING TO THIRD PARTY PROVIDERS OR TO MYSELF THAT MAY MALFUNCTION OR BREAK; (2) ANY SLIP, FALL, DROPPING OF EQUIPMENT; (3) AND/OR NEGLIGENT INSTRUCTION OR SUPERVISION.
+ 
+I am aware that there are significant risks involved in all aspects of physical training whether or not requiring the use of exercise equipment. These risks include, but are not limited to: falls which can result in serious injury or death; injury or death due to negligence on the part of myself, my personal trainer, or other people around me; strains and sprains; abnormal changes in blood pressure, fainting, and a remote risk of heart attack, stroke, other serious disability or death. I am voluntarily participating in these activities and using equipment with full knowledge, understanding and appreciation of the dangers involved. I am aware that any of these above mentioned risks may result in serious injury or death to myself and or my partner(s). I willingly assume full responsibility for the risks that I am exposing myself to and accept full responsibility for any injury or death that may result from participation in any activity or Service provided by the Company through its third party providers. 
+ 
+I have been advised that an examination by a physician should be obtained by anyone prior to commencing a fitness and/or exercise program, or initiating a substantial change in the amount of regular physical activity performed. If I have chosen not to obtain a physician’s consent prior to beginning this fitness program with the Company’s third party providers, I hereby agree that I am doing so solely at my own risk. In any event, I acknowledge and agree that I assume the risks associated with any and all fitness related activities and/or exercises in which I participate.
+ 
+I ACKNOWLEDGE THAT I HAVE NO PHYSICAL IMPAIRMENT, INJURIES, OR ILLNESSES THAT WILL ENDANGER MYSELF OR OTHERS. I ACKNOWLEDGE THAT I HAVE THOROUGHLY READ THIS FORM IN ITS ENTIRETY AND FULLY UNDERSTAND THAT IT IS A RELEASE OF LIABILITY. BY THE EXECUTION OF THIS AGREEMENT, I ACCEPT AND ASSUME FULL RESPONSIBILITY FOR ANY AND ALL INJURIES, DAMAGES (BOTH ECONOMIC AND NON-ECONOMIC), AND LOSSES OF ANY TYPE, WHICH MAY OCCUR TO ME OR MY GUEST, AND HEREBY FULLY AND FOREVER RELEASE AND DISCHARGE THE COMPANY, ITS INSURERS, THIRD PARTY PROVIDERS, EMPLOYEES, OFFICERS, DIRECTORS, AND ASSOCIATES, FROM ANY AND ALL CLAIMS, DEMANDS, DAMAGES, RIGHTS OF ACTION, OR CAUSES OF ACTION, PRESENT OR FUTURE, WHETHER THE SAME BE KNOWN OR UNKNOWN, ANTICIPATED, OR UNANTICIPATED, RESULTING FROM OR ARISING OUT OF THE USE OF SAID SERVICES WHICH ARE PROVIDED BY THE COMPANY OR ITS THRID PARTY PROVIDERS.
+ 
+This form is an important legal document that explains the risks you are assuming by beginning an exercise program. It is critical that you have read and understand this document completely. If you do not understand any part of this document, it is your ultimate responsibility to ask for clarification prior to participating in the Services.
+………………………………………………………………………………………………
+ 
+1. CONTRACTUAL RELATIONSHIP
+ 
+These Terms of Use (“Terms”) govern the access or use by you, an individual, from within the United States and its territories and possessions of applications, websites, content, products, and services (the “Services”) made available in the United States and its territories and possessions by WeTrain, LLC and its subsidiaries and affiliates (collectively, “WeTrain”). PLEASE READ THESE TERMS CAREFULLY BEFORE ACCESSING OR USING THE SERVICES. In these Terms, the words “including” and “include” mean “including, but not limited to.”
+ 
+Your access and use of the Services constitutes your agreement to be bound by these Terms, which establishes a contractual relationship between you and WeTrain. If you do not agree to these Terms, you may not access or use the Services. These Terms expressly supersede prior agreements or arrangements with you. WeTrain may immediately terminate these Terms or any Services with respect to you, or generally cease offering or deny access to the Services or any portion thereof, at any time for any reason.
+ 
+Supplemental terms may apply to certain Services, such as policies for a particular event, activity or promotion, and such supplemental terms will be disclosed to you in connection with the applicable Service(s). Supplemental terms are in addition to, and shall be deemed a part of, the Terms for the purposes of the applicable Service(s). Supplemental terms shall prevail over these Terms in the event of a conflict with respect to the applicable Services.
+ 
+WeTrain may amend the Terms related to the Services from time to time. Amendments will be effective upon WeTrain’s posting of such updated Terms at this location or the amended policies or supplemental terms on the applicable Service(s). Your continued access or use of the Services after such posting constitutes your consent to be bound by the Terms, as amended. 
+ 
+2. THE SERVICES
+ 
+The Services constitute a technology platform that enables users of WeTrain’s mobile applications or websites provided as part of the Services (each, an “Application”) to arrange and schedule personal training and/or fitness services with third party providers of such services, including independent third party personal training providers and third party fitness providers under agreement with WeTrain or certain of WeTrain’s affiliates (“Third Party Providers”). YOU ACKNOWLEDGE THAT WETRAIN DOES NOT PROVIDE PERSONAL TRAINING OR FITNESS SERVICES OR FUNCTION AS AN EXERCISE OR FITNESS FACILITY.
+ 
+LICENSE.
+Subject to your compliance with these Terms, WeTrain grants you a limited, non-exclusive, non-sublicensable, revocable, non-transferrable license to: (i) access and use the Applications on your personal device solely in connection with your use of the Services; and (ii) access and use any content, information and related materials that may be made available through the Services, in each case solely for your personal, noncommercial use. Any rights not expressly granted herein are reserved by WeTrain and WeTrain’s licensors.
+ 
+RESTRICTIONS.
+You may not: (i) remove any copyright, trademark or other proprietary notices from any portion of the Services; (ii) reproduce, modify, prepare derivative works based upon, distribute, license, lease, sell, resell, transfer, publicly display, publicly perform, transmit, stream, broadcast or otherwise exploit the Services except as expressly permitted by WeTrain; (iii) decompile, reverse engineer or disassemble the Services except as may be permitted by applicable law; (iv) link to, mirror or frame any portion of the Services; (v) cause or launch any programs or scripts for the purpose of scraping, indexing, surveying, or otherwise data mining any portion of the Services or unduly burdening or hindering the operation and/or functionality of any aspect of the Services; or (vi) attempt to gain unauthorized access to or impair any aspect of the Services or its related systems or networks.
+ 
+THIRD PARTY SERVICES AND CONTENT.
+The Services may be made available or accessed in connection with third party services and content (including advertising) that WeTrain does not control. You acknowledge that different terms of use and privacy policies may apply to your use of such third party services and content. WeTrain does not endorse such third party services and content and in no event shall WeTrain be responsible or liable for any products or services of such third party providers. Additionally, Apple Inc. will be a third-party beneficiary to this contract if you access the Services using Applications developed for Apple iOS. The third party beneficiaries are not parties to this contract and are not responsible for the provision or support of the Services in any manner. Your access to the Services using these devices is subject to terms set forth in the applicable third party beneficiary's terms of service.
+ 
+OWNERSHIP.
+The Services and all rights therein are and shall remain WeTrain’s property or the property of WeTrain’s licensors. Neither these Terms nor your use of the Services convey or grant to you any rights: (i) in or related to the Services except for the limited license granted above; or (ii) to use or reference in any manner WeTrain’s company names, logos, product and service names, trademarks or services marks or those of WeTrain’s licensors.
+ 
+3. YOUR USE OF THE SERVICES
+ 
+USER ACCOUNTS.
+In order to use most aspects of the Services, you must register for and maintain an active personal user Services account ("Account"). You must be at least 18 years of age, or the age of legal majority in your jurisdiction (if different than 18), to obtain an Account. Account registration requires you to submit to WeTrain certain personal information, such as your name, address, mobile phone number, age, past and current medical history, and desired fitness goals, as well as at least one valid payment method (either a credit card or accepted payment partner). You agree to maintain accurate, complete, and up-to-date information in your Account. Your failure to maintain accurate, complete, and up-to-date Account information, including having an invalid or expired payment method on file, or failure to update your medical history, may result in your inability to access and use the Services or WeTrain’s termination of this Agreement with you. You are responsible for all activity that occurs under your Account, and you agree to maintain the security and secrecy of your Account username and password at all times. Unless otherwise permitted by WeTrain in writing, you may only possess one Account.
+ 
+USER REQUIREMENTS AND CONDUCT.
+The Service is not available for use by persons under the age of 18. You may not authorize third parties to use your Account, and you may not allow persons under the age of 18 to receive personal training or fitness services from Third Party Providers unless they are accompanied by you. You may not assign or otherwise transfer your Account to any other person or entity. You agree to comply with all applicable laws when using the Services. You will not in your use of the Services cause nuisance, annoyance, inconvenience, or property damage, whether to the Third Party Provider or any other party. In certain instances you may be asked to provide proof of identity to access or use the Services, and you agree that you may be denied access to or use of the Services if you refuse to provide proof of identity.
+ 
+TEXT MESSAGING.
+By creating an Account, you agree that the Services may send you informational text (SMS) messages as part of the normal business operation of your use of the Services. You may opt-out of receiving text (SMS) messages from WeTrain at any time by emailing support@wetrainphilly.com. You acknowledge that opting out of receiving text (SMS) messages may impact your use of the Services.
+ 
+PROMOTIONAL CODES.
+WeTrain may, in WeTrain’s sole discretion, create promotional codes that may be redeemed for Account credit, or other features or benefits related to the Services and/or a Third Party Provider's services, subject to any additional terms that WeTrain establishes on a per promotional code basis (“Promo Codes”). You agree that Promo Codes: (i) must be used for the intended audience and purpose, and in a lawful manner; (ii) may not be duplicated, sold or transferred in any manner, or made available to the general public (whether posted to a public form or otherwise), unless expressly permitted by WeTrain; (iii) may be disabled by WeTrain at any time for any reason without liability to WeTrain; (iv) may only be used pursuant to the specific terms that WeTrain establishes for such Promo Code; (v) are not valid for cash; and (vi) may expire prior to your use. WeTrain reserves the right to withhold or deduct credits or other features or benefits obtained through the use of Promo Codes by you or any other user in the event that WeTrain determines or believes that the use or redemption of the Promo Code was in error, fraudulent, illegal, or in violation of the applicable Promo Code terms or these Terms.
+ 
+USER PROVIDED CONTENT.
+WeTrain may, in WeTrain’s sole discretion, permit you from time to time to submit, upload, publish or otherwise make available to WeTrain through the Services textual, audio, and/or visual content and information, including commentary and feedback related to the Services, initiation of support requests, and submission of entries for competitions and promotions ("User Content"). Any User Content provided by you remains your property. However, by providing User Content to WeTrain, you grant WeTrain a worldwide, perpetual, irrevocable, transferrable, royalty-free license, with the right to sublicense, to use, copy, modify, create derivative works of, distribute, publicly display, publicly perform, and otherwise exploit in any manner such User Content in all formats and distribution channels now known or hereafter devised (including in connection with the Services and WeTrain’s business and on third-party sites and services), without further notice to or consent from you, and without the requirement of payment to you or any other person or entity.
+ 
+You represent and warrant that: (i) you either are the sole and exclusive owner of all User Content or you have all rights, licenses, consents and releases necessary to grant WeTrain the license to the User Content as set forth above; and (ii) neither the User Content nor your submission, uploading, publishing or otherwise making available of such User Content nor WeTrain’s use of the User Content as permitted herein will infringe, misappropriate or violate a third party's intellectual property or proprietary rights, or rights of publicity or privacy, or result in the violation of any applicable law or regulation.
+ 
+You agree to not provide User Content that is defamatory, libelous, hateful, violent, obscene, pornographic, unlawful, or otherwise offensive, as determined by WeTrain in its sole discretion, whether or not such material may be protected by law. WeTrain may, but shall not be obligated to, review, monitor, or remove User Content, at WeTrain’s sole discretion and at any time and for any reason, without notice to you.
+ 
+NETWORK ACCESS AND DEVICES.
+You are responsible for obtaining the data network access necessary to use the Services. Your mobile network's data and messaging rates and fees may apply if you access or use the Services from a wireless-enabled device. You are responsible for acquiring and updating compatible hardware or devices necessary to access and use the Services and Applications and any updates thereto. WeTrain does not guarantee that the Services, or any portion thereof, will function on any particular hardware or devices. In addition, the Services may be subject to malfunctions and delays inherent in the use of the Internet and electronic communications.
+ 
+4. PAYMENT
+ 
+You understand that use of the Services may result in charges to you for the services or goods you receive from a Third Party Provider (“Charges”). After you have received services or goods obtained through your use of the Service, WeTrain will facilitate your payment of the applicable Charges on behalf of the Third Party Provider, as such Third Party Provider's limited payment collection agent. Payment of the Charges in such manner shall be considered the same as payment made directly by you to the Third Party Provider. Charges will be inclusive of applicable taxes where required by law. Charges paid by you are final and non-refundable, unless otherwise determined by WeTrain. 
+ 
+All Charges are due immediately and payment will be facilitated by WeTrain using the preferred payment method designated in your Account. If your primary Account payment method is determined to be expired, invalid or otherwise not able to be charged, you agree that WeTrain may, as the Third Party Provider's limited payment collection agent, use a secondary payment method in your Account, if available.
+ 
+As between you and WeTrain, WeTrain reserves the right to establish, remove and/or revise Charges for any or all services or goods obtained through the use of the Services at any time in WeTrain’s sole discretion. WeTrain may from time to time provide certain users with promotional offers and discounts that may result in different amounts charged for the same or similar services or goods obtained through the use of the Services, and you agree that such promotional offers and discounts, unless also made available to you, shall have no bearing on your use of the Services or the Charges applied to you. You may elect to cancel your request for services or goods from a Third Party Provider at any time prior to such Third Party Provider's arrival, in which case you may be charged a cancellation fee. This payment structure is intended to fully compensate the Third Party Provider for the services or goods provided. WeTrain does not designate any portion of your payment as a tip or gratuity to the Third Party Provider. Any representation by WeTrain to the effect that tipping is “voluntary,” “not required,” and/or “included” in the payments you make for services or goods provided is not intended to suggest that WeTrain provides any additional amounts, beyond those described above, to the Third Party Provider. You understand and agree that, while you are free to provide additional payment as a gratuity to any Third Party Provider who provides you with services or goods obtained through the Service, you are under no obligation to do so. Gratuities are voluntary. After you have received services or goods obtained through the Service, you will have the opportunity to rate your experience and leave additional feedback about your Third Party Provider.
+ 
+5. DISCLAIMERS; LIMITATION OF LIABILITY; INDEMNITY.
+ 
+DISCLAIMER.
+THE SERVICES ARE PROVIDED “AS IS” AND “AS AVAILABLE.” WETRAIN DISCLAIMS ALL REPRESENTATIONS AND WARRANTIES, EXPRESS, IMPLIED, OR STATUTORY, NOT EXPRESSLY SET OUT IN THESE TERMS, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN ADDITION, WETRAIN MAKES NO REPRESENTATION, WARRANTY, OR GUARANTEE REGARDING THE RELIABILITY, TIMELINESS, QUALITY, SUITABILITY, OR AVAILABILITY OF THE SERVICES OR ANY SERVICES OR GOODS REQUESTED THROUGH THE USE OF THE SERVICES, OR THAT THE SERVICES WILL BE UNINTERRUPTED OR ERROR-FREE. WETRAIN DOES NOT GUARANTEE THE QUALITY, SUITABILITY, SAFETY OR ABILITY OF THIRD PARTY PROVIDERS. YOU AGREE THAT THE ENTIRE RISK ARISING OUT OF YOUR USE OF THE SERVICES, AND ANY SERVICE OR GOOD REQUESTED IN CONNECTION THEREWITH, REMAINS SOLELY WITH YOU, TO THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE LAW.
+ 
+LIMITATION OF LIABILITY.
+WETRAIN SHALL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE, OR CONSEQUENTIAL DAMAGES, INCLUDING LOST PROFITS, LOST DATA, PERSONAL INJURY, OR PROPERTY DAMAGE RELATED TO, IN CONNECTION WITH, OR OTHERWISE RESULTING FROM ANY USE OF THE SERVICES, EVEN IF WETRAIN HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. WETRAIN SHALL NOT BE LIABLE FOR ANY DAMAGES, LIABILITY OR LOSSES ARISING OUT OF: (i) YOUR USE OF OR RELIANCE ON THE SERVICES OR YOUR INABILITY TO ACCESS OR USE THE SERVICES; OR (ii) ANY TRANSACTION OR RELATIONSHIP BETWEEN YOU AND ANY THIRD PARTY PROVIDER, EVEN IF WETRAIN HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. WETRAIN SHALL NOT BE LIABLE FOR DELAY OR FAILURE IN PERFORMANCE RESULTING FROM CAUSES BEYOND WETRAIN’S REASONABLE CONTROL. IN NO EVENT SHALL WETRAIN’S TOTAL LIABILITY TO YOU IN CONNECTION WITH THE SERVICES FOR ALL DAMAGES, LOSSES AND CAUSES OF ACTION EXCEED ONE HUNDRED U.S. DOLLARS (US $100).
+ 
+WETRAIN’S SERVICES MAY BE USED BY YOU TO REQUEST AND SCHEDULE PERSONAL TRAINING, GOODS, OR FITNESS SERVICES WITH THIRD PARTY PROVIDERS, BUT YOU AGREE THAT WETRAIN HAS NO RESPONSIBILITY OR LIABILITY TO YOU RELATED TO ANY PERSONAL TRAINING, GOODS OR FITNESS SERVICES PROVIDED TO YOU BY THIRD PARTY PROVIDERS OTHER THAN AS EXPRESSLY SET FORTH IN THESE TERMS.
+ 
+THE LIMITATIONS AND DISCLAIMER IN THIS SECTION 5 DO NOT PURPORT TO LIMIT LIABILITY OR ALTER YOUR RIGHTS AS A CONSUMER THAT CANNOT BE EXCLUDED UNDER APPLICABLE LAW.
+ 
+INDEMNITY.
+You agree to indemnify and hold WeTrain and its officers, directors, employees, and agents harmless from any and all claims, demands, losses, liabilities, and expenses (including attorneys' fees), arising out of or in connection with: (i) your use of the Services or services or goods obtained through your use of the Services; (ii) your breach or violation of any of these Terms; (iii) WeTrain’s use of your User Content; or (iv) your violation of the rights of any third party, including Third Party Providers.
+ 
+6. DISPUTE RESOLUTION
+ 
+ARBITRATION.
+You agree that any dispute, claim or controversy arising out of or relating to these Terms or the breach, termination, enforcement, interpretation or validity thereof or the use of the Services (collectively, “Disputes”) will be settled by binding arbitration between you and WeTrain, except that each party retains the right to bring an individual action in small claims court and the right to seek injunctive or other equitable relief in a court of competent jurisdiction to prevent the actual or threatened infringement, misappropriation or violation of a party's copyrights, trademarks, trade secrets, patents or other intellectual property rights. You acknowledge and agree that you and WeTrain are each waiving the right to a trial by jury or to participate as a plaintiff or class in any purported class action or representative proceeding. Further, unless both you and WeTrain otherwise agree in writing, the arbitrator may not consolidate more than one person's claims, and may not otherwise preside over any form of any class or representative proceeding. If this specific paragraph is held unenforceable, then the entirety of this "Dispute Resolution" section will be deemed void. Except as provided in the preceding sentence, this "Dispute Resolution" section will survive any termination of these Terms.
+ 
+ARBITRATION RULES AND GOVERNING LAW.
+The arbitration will be administered by the American Arbitration Association ("AAA") in accordance with the Commercial Arbitration Rules and the Supplementary Procedures for Consumer Related Disputes (the "AAA Rules") then in effect, except as modified by this "Dispute Resolution" section. (The AAA Rules are available at www.adr.org/arb_med or by calling the AAA at 1-800-778-7879.) The Federal Arbitration Act will govern the interpretation and enforcement of this Section.
+ 
+ARBITRATION PROCESS.
+A party who desires to initiate arbitration must provide the other party with a written Demand for Arbitration as specified in the AAA Rules. (The AAA provides a form Demand for Arbitration at www.adr.org/aaa/ShowPDF?doc=ADRSTG_004175. The arbitrator will be either a retired judge or an attorney licensed to practice law in the state of Pennsylvania and will be selected by the parties from the AAA's roster of consumer dispute arbitrators. If the parties are unable to agree upon an arbitrator within seven (7) days of delivery of the Demand for Arbitration, then the AAA will appoint the arbitrator in accordance with the AAA Rules.
+ 
+ARBITRATION LOCATION AND PROCEDURE.
+Unless you and WeTrain otherwise agree, the arbitration will be conducted in Philadelphia, Pennsylvania. If your claim does not exceed $10,000, then the arbitration will be conducted solely on the basis of documents you and WeTrain submit to the arbitrator, unless you request a hearing or the arbitrator determines that a hearing is necessary. If your claim exceeds $10,000, your right to a hearing will be determined by the AAA Rules. Subject to the AAA Rules, the arbitrator will have the discretion to direct a reasonable exchange of information by the parties, consistent with the expedited nature of the arbitration.
+ 
+ARBITRATOR'S DECISION.
+The arbitrator will render an award within the time frame specified in the AAA Rules. The arbitrator's decision will include the essential findings and conclusions upon which the arbitrator based the award. Judgment on the arbitration award may be entered in any court having jurisdiction thereof. The arbitrator's award damages must be consistent with the terms of the "Limitation of Liability" section above as to the types and the amounts of damages for which a party may be held liable. The arbitrator may award declaratory or injunctive relief only in favor of the claimant and only to the extent necessary to provide relief warranted by the claimant's individual claim. If you prevail in arbitration you will be entitled to an award of attorneys' fees and expenses, to the extent provided under applicable law. WeTrain will not seek, and hereby waives all rights WeTrain may have under applicable law to recover, attorneys' fees and expenses if WeTrain prevails in arbitration.
+ 
+FEES.
+Your responsibility to pay any AAA filing, administrative and arbitrator fees will be solely as set forth in the AAA Rules. However, if your claim for damages does not exceed $75,000, WeTrain will pay all such fees unless the arbitrator finds that either the substance of your claim or the relief sought in your Demand for Arbitration was frivolous or was brought for an improper purpose (as measured by the standards set forth in Federal Rule of Civil Procedure 11(b)).
+ 
+CHANGES.
+Notwithstanding the provisions of the modification-related provisions above, if WeTrain changes this "Dispute Resolution" section after the date you first accepted these Terms (or accepted any subsequent changes to these Terms), you may reject any such change by providing WeTrain written notice of such rejection by email from the email address associated with your Account to support@wetrainphilly.com within 30 days of the date such change became effective, as indicated in the "Last update" date above. In order to be effective, the notice must include your full name and clearly indicate your intent to reject changes to this "Dispute Resolution" section. By rejecting changes, you are agreeing that you will arbitrate any Dispute between you and WeTrain in accordance with the provisions of this "Dispute Resolution" section as of the date you first accepted these Terms (or accepted any subsequent changes to these Terms).
+ 
+7. OTHER PROVISIONS
+ 
+CHOICE OF LAW.
+These Terms are governed by and construed in accordance with the laws of the State of Pennsylvania, U.S.A., without giving effect to any conflict of law principles.
+ 
+NOTICE.
+WeTrain may give notice by means of a general notice on the Services, electronic mail to your email address in your Account, or by written communication sent by first class mail or pre-paid post to your address in your Account.
+ 
+GENERAL.
+You may not assign these Terms without WeTrain’s prior written approval. WeTrain may assign these Terms without your consent to: (i) a subsidiary or affiliate; (ii) an acquirer of WeTrain’s equity, business or assets; or (iii) a successor by merger. Any purported assignment in violation of this section shall be void. No joint venture, partnership, employment, or agency relationship exists between you, WeTrain or any Third Party Provider as a result of this Agreement or use of the Services. If any provision of these Terms is held to be invalid or unenforceable, such provision shall be struck and the remaining provisions shall be enforced to the fullest extent under law. WeTrain’s failure to enforce any right or provision in these Terms shall not constitute a waiver of such right or provision unless acknowledged and agreed to by WeTrain in writing.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="03j-8r-MkA" firstAttribute="leading" secondItem="UG0-RT-boq" secondAttribute="leading" constant="20" id="18t-nf-aKW"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ppi-Bc-a9Q" secondAttribute="trailing" constant="20" id="1sS-Ms-oAc"/>
+                                            <constraint firstAttribute="trailing" secondItem="rcc-2P-9eH" secondAttribute="trailing" constant="20" id="1yM-zb-iNE"/>
+                                            <constraint firstItem="qfM-8h-CNY" firstAttribute="leading" secondItem="KGq-i0-vlR" secondAttribute="trailing" constant="8" id="2Gb-Qa-Omc"/>
+                                            <constraint firstItem="eQ9-En-Jdc" firstAttribute="leading" secondItem="KGq-i0-vlR" secondAttribute="leading" id="2jB-PS-acC"/>
+                                            <constraint firstItem="eQ9-En-Jdc" firstAttribute="top" secondItem="KGq-i0-vlR" secondAttribute="top" id="4BQ-Uw-DXY"/>
+                                            <constraint firstItem="qfM-8h-CNY" firstAttribute="top" secondItem="j2Y-V2-eRs" secondAttribute="bottom" constant="20" id="4FR-Si-gge"/>
+                                            <constraint firstItem="j2Y-V2-eRs" firstAttribute="top" secondItem="8q1-cH-lDe" secondAttribute="bottom" constant="8" id="9W5-EM-XaF"/>
+                                            <constraint firstItem="Ppi-Bc-a9Q" firstAttribute="leading" secondItem="UG0-RT-boq" secondAttribute="leading" constant="20" id="A0e-la-wWr"/>
+                                            <constraint firstItem="X6u-yA-wIw" firstAttribute="leading" secondItem="UG0-RT-boq" secondAttribute="leading" constant="20" id="ALj-bo-oHu"/>
+                                            <constraint firstItem="rcc-2P-9eH" firstAttribute="top" secondItem="Nsb-Fb-x4f" secondAttribute="bottom" constant="25" id="AaH-Gh-pGE">
+                                                <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                                            </constraint>
+                                            <constraint firstItem="8q1-cH-lDe" firstAttribute="top" secondItem="X6u-yA-wIw" secondAttribute="bottom" constant="8" id="AwV-vr-hpn"/>
+                                            <constraint firstItem="j2Y-V2-eRs" firstAttribute="leading" secondItem="UG0-RT-boq" secondAttribute="leading" constant="20" id="BVu-gF-M6U"/>
+                                            <constraint firstItem="X6u-yA-wIw" firstAttribute="top" secondItem="Ppi-Bc-a9Q" secondAttribute="bottom" constant="1" id="CDt-EK-JdJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="X6u-yA-wIw" secondAttribute="trailing" constant="20" id="IqT-BU-Wai"/>
+                                            <constraint firstItem="JfQ-eu-u5Q" firstAttribute="centerX" secondItem="03j-8r-MkA" secondAttribute="centerX" constant="-105" id="KXl-gI-keR"/>
+                                            <constraint firstAttribute="trailing" secondItem="03j-8r-MkA" secondAttribute="trailing" constant="20" id="PjM-4r-fUx"/>
+                                            <constraint firstItem="JfQ-eu-u5Q" firstAttribute="top" secondItem="03j-8r-MkA" secondAttribute="top" constant="7" id="ReA-Z9-rXF"/>
+                                            <constraint firstAttribute="width" constant="600" id="S5y-wl-G5u"/>
+                                            <constraint firstAttribute="height" constant="688" id="StJ-bS-Yu5">
+                                                <variation key="widthClass=compact" constant="736"/>
+                                            </constraint>
+                                            <constraint firstAttribute="trailing" secondItem="j2Y-V2-eRs" secondAttribute="trailing" constant="20" id="WT6-rG-hRC"/>
+                                            <constraint firstItem="03j-8r-MkA" firstAttribute="top" secondItem="UG0-RT-boq" secondAttribute="top" constant="15" id="Wu1-Uy-rI9"/>
+                                            <constraint firstAttribute="bottom" secondItem="rcc-2P-9eH" secondAttribute="bottom" constant="60" id="Zil-ON-fzh"/>
+                                            <constraint firstItem="Nsb-Fb-x4f" firstAttribute="top" secondItem="eQ9-En-Jdc" secondAttribute="bottom" constant="25" id="edk-bG-izJ">
+                                                <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                                            </constraint>
+                                            <constraint firstItem="KGq-i0-vlR" firstAttribute="leading" secondItem="UG0-RT-boq" secondAttribute="leading" constant="20" id="fCP-ah-2Jv"/>
+                                            <constraint firstAttribute="trailing" secondItem="eQ9-En-Jdc" secondAttribute="trailing" constant="20" id="hIo-wU-HRx"/>
+                                            <constraint firstItem="Nsb-Fb-x4f" firstAttribute="leading" secondItem="UG0-RT-boq" secondAttribute="leading" constant="20" id="iWW-ig-Hm8"/>
+                                            <constraint firstItem="8q1-cH-lDe" firstAttribute="leading" secondItem="UG0-RT-boq" secondAttribute="leading" constant="20" id="jWf-1b-Gou"/>
+                                            <constraint firstItem="rcc-2P-9eH" firstAttribute="leading" secondItem="UG0-RT-boq" secondAttribute="leading" constant="20" id="on4-JA-cFR"/>
+                                            <constraint firstItem="KGq-i0-vlR" firstAttribute="top" secondItem="j2Y-V2-eRs" secondAttribute="bottom" constant="16" id="pNM-Ai-USd"/>
+                                            <constraint firstItem="8q1-cH-lDe" firstAttribute="top" secondItem="X6u-yA-wIw" secondAttribute="bottom" constant="8" id="qGD-6h-kbz"/>
+                                            <constraint firstItem="Ppi-Bc-a9Q" firstAttribute="top" secondItem="03j-8r-MkA" secondAttribute="bottom" constant="19" id="qSk-YI-pNn"/>
+                                            <constraint firstAttribute="trailing" secondItem="Nsb-Fb-x4f" secondAttribute="trailing" constant="20" id="tVN-pQ-kaD"/>
+                                            <constraint firstAttribute="trailing" secondItem="8q1-cH-lDe" secondAttribute="trailing" constant="20" id="v3I-Vt-kEi"/>
+                                            <constraint firstAttribute="trailing" secondItem="qfM-8h-CNY" secondAttribute="trailing" constant="20" id="xXQ-6c-wbA"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="UG0-RT-boq" secondAttribute="trailing" id="GAY-Oh-lee"/>
+                                    <constraint firstItem="UG0-RT-boq" firstAttribute="leading" secondItem="1lh-9f-MYB" secondAttribute="leading" id="M70-qy-g2d"/>
+                                    <constraint firstItem="UG0-RT-boq" firstAttribute="top" secondItem="1lh-9f-MYB" secondAttribute="top" id="TVU-rS-0Hg"/>
+                                    <constraint firstAttribute="bottom" secondItem="UG0-RT-boq" secondAttribute="bottom" constant="82" id="UGM-lR-bhj"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1lh-9f-MYB" secondAttribute="trailing" id="6Sp-rh-OJq"/>
+                            <constraint firstItem="1lh-9f-MYB" firstAttribute="leading" secondItem="4kw-TC-Omx" secondAttribute="leading" id="RZT-pf-m2b"/>
+                            <constraint firstItem="wiT-Ef-HFy" firstAttribute="top" secondItem="1lh-9f-MYB" secondAttribute="bottom" constant="10" id="VlR-3I-X9A"/>
+                            <constraint firstItem="1lh-9f-MYB" firstAttribute="top" secondItem="2OZ-ov-wY1" secondAttribute="bottom" id="vVm-uC-3f7">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-64"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sign Up" id="Rsa-GK-tmc"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="800"/>
+                    <connections>
+                        <outlet property="buttonTOS" destination="KGq-i0-vlR" id="hJZ-aj-fbC"/>
+                        <outlet property="buttonTOSbg" destination="eQ9-En-Jdc" id="Mi4-sh-fHt"/>
+                        <outlet property="constraintBottomOffset" destination="UGM-lR-bhj" id="Glg-cQ-Kt3"/>
+                        <outlet property="constraintContentHeight" destination="StJ-bS-Yu5" id="bDY-eK-ycE"/>
+                        <outlet property="constraintContentWidth" destination="S5y-wl-G5u" id="ISR-NI-jHU"/>
+                        <outlet property="inputConfirmation" destination="j2Y-V2-eRs" id="6Sx-L1-XuF"/>
+                        <outlet property="inputPassword" destination="8q1-cH-lDe" id="JQB-KU-SeD"/>
+                        <outlet property="inputUsername" destination="X6u-yA-wIw" id="6Eg-wN-3bf"/>
+                        <outlet property="scrollView" destination="1lh-9f-MYB" id="ets-gQ-vbM"/>
+                        <outlet property="textView" destination="rcc-2P-9eH" id="NIV-mw-ywq"/>
+                        <outlet property="viewScrollContent" destination="UG0-RT-boq" id="CSd-z8-TG4"/>
+                        <segue destination="civ-Bp-HRs" kind="show" identifier="GoToUserInfo" id="PUr-M3-ypy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nqz-DM-CWC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="720" y="258"/>
+        </scene>
+        <!--User Info-->
+        <scene sceneID="OLp-5Y-WhH">
+            <objects>
+                <viewController restorationIdentifier="UserInfoViewController" storyboardIdentifier="UserInfoViewController" automaticallyAdjustsScrollViewInsets="NO" id="civ-Bp-HRs" customClass="UserInfoViewController" customModule="WeTrain" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ffA-nx-54Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="HRJ-Sv-LQi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IvC-Eu-JZC">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ne6-W1-256">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="86m-9D-qAA">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DhG-7P-k4I">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
+                                                <subviews>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CC7-6k-vjo">
+                                                        <rect key="frame" x="20" y="26" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="UJV-Ic-hwT"/>
+                                                            <constraint firstAttribute="height" constant="50" id="bfF-gV-y2S"/>
+                                                        </constraints>
+                                                        <state key="normal" image="add_user"/>
+                                                        <connections>
+                                                            <action selector="didClickAddPhoto:" destination="civ-Bp-HRs" eventType="touchUpInside" id="6tT-WQ-M6T"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEP-cL-Rcg">
+                                                        <rect key="frame" x="78" y="36" width="83" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="83" id="WRT-AV-RzP"/>
+                                                            <constraint firstAttribute="height" constant="30" id="th2-Cu-TSF"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <state key="normal" title="Add photo">
+                                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" red="1" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="didClickAddPhoto:" destination="civ-Bp-HRs" eventType="touchUpInside" id="jZB-Dn-S4h"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JxQ-eA-chR">
+                                                        <rect key="frame" x="20" y="94" width="560" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="21" id="Toy-Bt-Pza"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYw-87-AAf">
+                                                        <rect key="frame" x="20" y="121" width="560" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="21" id="pjh-n0-eRY"/>
+                                                        </constraints>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="*">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content=" ">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="Required">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <font key="NSFont" size="13" name="HelveticaNeue-Italic"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" minimumFontSize="17" background="rectTextBg" translatesAutoresizingMaskIntoConstraints="NO" id="y7e-uc-f87">
+                                                        <rect key="frame" x="20" y="157" width="560" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="8dg-e8-YHO"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="civ-Bp-HRs" id="fcu-Pc-CN5"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone number" minimumFontSize="17" background="rectTextBg" translatesAutoresizingMaskIntoConstraints="NO" id="XOy-wi-pAs">
+                                                        <rect key="frame" x="20" y="200" width="560" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="Kcj-xO-5Rb"/>
+                                                        </constraints>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" enablesReturnKeyAutomatically="YES"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="civ-Bp-HRs" id="EXB-Kd-0MD"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Credit Card Info" textAlignment="natural" minimumFontSize="17" background="rectTextBg" translatesAutoresizingMaskIntoConstraints="NO" id="y45-Ga-bkb">
+                                                        <rect key="frame" x="20" y="243" width="560" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="gV6-T7-JsH"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="civ-Bp-HRs" id="69z-Gv-XOp"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First name" minimumFontSize="17" background="rectTextBg" translatesAutoresizingMaskIntoConstraints="NO" id="SSF-3c-n76">
+                                                        <rect key="frame" x="20" y="287" width="560" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="Aon-2O-nq4"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="civ-Bp-HRs" id="ugk-JB-Z7p"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last name" minimumFontSize="17" background="rectTextBg" translatesAutoresizingMaskIntoConstraints="NO" id="4Wp-QB-dTM">
+                                                        <rect key="frame" x="20" y="330" width="560" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="1Uw-DB-3Rj"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="civ-Bp-HRs" id="Cum-CE-rON"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Age" minimumFontSize="17" background="rectTextBg" translatesAutoresizingMaskIntoConstraints="NO" id="meJ-HK-GrD">
+                                                        <rect key="frame" x="20" y="373" width="560" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="oZw-xT-QYl"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="civ-Bp-HRs" id="Syn-Fg-bQU"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Gender" minimumFontSize="17" background="rectTextBg" translatesAutoresizingMaskIntoConstraints="NO" id="jTn-I1-6st">
+                                                        <rect key="frame" x="20" y="416" width="560" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="SNs-zq-mP9"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="civ-Bp-HRs" id="qnq-a3-ia3"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="List All Injuries &amp; Medical Conditions" minimumFontSize="17" background="rectTextBg" translatesAutoresizingMaskIntoConstraints="NO" id="Xz7-4x-nfI">
+                                                        <rect key="frame" x="20" y="459" width="560" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="588-E3-VyA"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="civ-Bp-HRs" id="Xxl-l1-O95"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jhW-QI-qjs">
+                                                        <rect key="frame" x="12" y="502" width="568" height="49"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REf-vU-8XM">
+                                                                <rect key="frame" x="8" y="10" width="30" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="QIQ-ed-EvP"/>
+                                                                    <constraint firstAttribute="width" constant="30" id="cqX-nF-ixB"/>
+                                                                </constraints>
+                                                                <state key="normal" image="boxUnchecked"/>
+                                                                <connections>
+                                                                    <action selector="didClickCheck:" destination="civ-Bp-HRs" eventType="touchUpInside" id="Pdc-td-y2Z"/>
+                                                                </connections>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ey9-bh-e8Y">
+                                                                <rect key="frame" x="49" y="14" width="522" height="21"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="21" id="9vH-zS-pdZ"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iF4-WH-m0e">
+                                                                <rect key="frame" x="0.0" y="0.0" width="568" height="49"/>
+                                                                <connections>
+                                                                    <action selector="didClickCheck:" destination="civ-Bp-HRs" eventType="touchUpInside" id="5cp-MU-zaT"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="iF4-WH-m0e" secondAttribute="trailing" id="3QV-fn-5Sj"/>
+                                                            <constraint firstAttribute="bottom" secondItem="iF4-WH-m0e" secondAttribute="bottom" id="FIC-2M-Q0u"/>
+                                                            <constraint firstItem="REf-vU-8XM" firstAttribute="leading" secondItem="jhW-QI-qjs" secondAttribute="leading" constant="8" id="KeD-gh-QQB"/>
+                                                            <constraint firstAttribute="height" constant="49" id="NWm-PZ-3dQ"/>
+                                                            <constraint firstItem="iF4-WH-m0e" firstAttribute="leading" secondItem="jhW-QI-qjs" secondAttribute="leading" id="Rbo-E1-dyU"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ey9-bh-e8Y" secondAttribute="trailing" constant="-3" id="WNX-Zr-0zQ"/>
+                                                            <constraint firstItem="ey9-bh-e8Y" firstAttribute="top" secondItem="jhW-QI-qjs" secondAttribute="top" constant="14" id="aY2-sj-3aI"/>
+                                                            <constraint firstItem="iF4-WH-m0e" firstAttribute="top" secondItem="jhW-QI-qjs" secondAttribute="top" id="c4J-3Y-uMO"/>
+                                                            <constraint firstItem="ey9-bh-e8Y" firstAttribute="leading" secondItem="REf-vU-8XM" secondAttribute="trailing" constant="11" id="ek7-sO-Hm8"/>
+                                                            <constraint firstItem="REf-vU-8XM" firstAttribute="top" secondItem="jhW-QI-qjs" secondAttribute="top" constant="10" id="g3Q-vY-bfp"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MKP-bV-k8N">
+                                                        <rect key="frame" x="20" y="560" width="560" height="300"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="300" id="ohZ-gR-EFN"/>
+                                                        </constraints>
+                                                        <string key="text">I have volunteered to participate in the Services (the “Services” as defined in the Terms and Conditions Agreement) provided to me by WeTrain, LLC  (“Company”) through the Company’s third party providers of such Services, which may include, but may not be limited to, resistance training, aerobic training, mobility training, or cardiovascular exercise. In consideration of the Company’s agreement to provide the Services through the Company’s third party providers, I do here now and forever release and discharge and hereby hold harmless the Company and their third party providers, respective agents, heirs, assigns, contractors, and employees from any and all claims, demands, damages, rights of action or causes of action, present or future, arising out of or connected with the Services and/or my participation in this or any exercise program including any injuries resulting there from.
+ 
+THIS WAIVER AND RELEASE OF LIABILITY INCLUDES, WITHOUT LIMITATION, INJURIES WHICH MAY OCCUR AS A RESULT OF (1) EQUIPMENT BELONGING TO THIRD PARTY PROVIDERS OR TO MYSELF THAT MAY MALFUNCTION OR BREAK; (2) ANY SLIP, FALL, DROPPING OF EQUIPMENT; (3) AND/OR NEGLIGENT INSTRUCTION OR SUPERVISION.
+ 
+I am aware that there are significant risks involved in all aspects of physical training whether or not requiring the use of exercise equipment. These risks include, but are not limited to: falls which can result in serious injury or death; injury or death due to negligence on the part of myself, my personal trainer, or other people around me; strains and sprains; abnormal changes in blood pressure, fainting, and a remote risk of heart attack, stroke, other serious disability or death. I am voluntarily participating in these activities and using equipment with full knowledge, understanding and appreciation of the dangers involved. I am aware that any of these above mentioned risks may result in serious injury or death to myself and or my partner(s). I willingly assume full responsibility for the risks that I am exposing myself to and accept full responsibility for any injury or death that may result from participation in any activity or Service provided by the Company through its third party providers. 
+ 
+I have been advised that an examination by a physician should be obtained by anyone prior to commencing a fitness and/or exercise program, or initiating a substantial change in the amount of regular physical activity performed. If I have chosen not to obtain a physician’s consent prior to beginning this fitness program with the Company’s third party providers, I hereby agree that I am doing so solely at my own risk. In any event, I acknowledge and agree that I assume the risks associated with any and all fitness related activities and/or exercises in which I participate.
+ 
+I ACKNOWLEDGE THAT I HAVE NO PHYSICAL IMPAIRMENT, INJURIES, OR ILLNESSES THAT WILL ENDANGER MYSELF OR OTHERS. I ACKNOWLEDGE THAT I HAVE THOROUGHLY READ THIS FORM IN ITS ENTIRETY AND FULLY UNDERSTAND THAT IT IS A RELEASE OF LIABILITY. BY THE EXECUTION OF THIS AGREEMENT, I ACCEPT AND ASSUME FULL RESPONSIBILITY FOR ANY AND ALL INJURIES, DAMAGES (BOTH ECONOMIC AND NON-ECONOMIC), AND LOSSES OF ANY TYPE, WHICH MAY OCCUR TO ME OR MY GUEST, AND HEREBY FULLY AND FOREVER RELEASE AND DISCHARGE THE COMPANY, ITS INSURERS, THIRD PARTY PROVIDERS, EMPLOYEES, OFFICERS, DIRECTORS, AND ASSOCIATES, FROM ANY AND ALL CLAIMS, DEMANDS, DAMAGES, RIGHTS OF ACTION, OR CAUSES OF ACTION, PRESENT OR FUTURE, WHETHER THE SAME BE KNOWN OR UNKNOWN, ANTICIPATED, OR UNANTICIPATED, RESULTING FROM OR ARISING OUT OF THE USE OF SAID SERVICES WHICH ARE PROVIDED BY THE COMPANY OR ITS THRID PARTY PROVIDERS.
+ 
+This form is an important legal document that explains the risks you are assuming by beginning an exercise program. It is critical that you have read and understand this document completely. If you do not understand any part of this document, it is your ultimate responsibility to ask for clarification prior to participating in the Services.
+………………………………………………………………………………………………
+ 
+1. CONTRACTUAL RELATIONSHIP
+ 
+These Terms of Use (“Terms”) govern the access or use by you, an individual, from within the United States and its territories and possessions of applications, websites, content, products, and services (the “Services”) made available in the United States and its territories and possessions by WeTrain, LLC and its subsidiaries and affiliates (collectively, “WeTrain”). PLEASE READ THESE TERMS CAREFULLY BEFORE ACCESSING OR USING THE SERVICES. In these Terms, the words “including” and “include” mean “including, but not limited to.”
+ 
+Your access and use of the Services constitutes your agreement to be bound by these Terms, which establishes a contractual relationship between you and WeTrain. If you do not agree to these Terms, you may not access or use the Services. These Terms expressly supersede prior agreements or arrangements with you. WeTrain may immediately terminate these Terms or any Services with respect to you, or generally cease offering or deny access to the Services or any portion thereof, at any time for any reason.
+ 
+Supplemental terms may apply to certain Services, such as policies for a particular event, activity or promotion, and such supplemental terms will be disclosed to you in connection with the applicable Service(s). Supplemental terms are in addition to, and shall be deemed a part of, the Terms for the purposes of the applicable Service(s). Supplemental terms shall prevail over these Terms in the event of a conflict with respect to the applicable Services.
+ 
+WeTrain may amend the Terms related to the Services from time to time. Amendments will be effective upon WeTrain’s posting of such updated Terms at this location or the amended policies or supplemental terms on the applicable Service(s). Your continued access or use of the Services after such posting constitutes your consent to be bound by the Terms, as amended. 
+ 
+2. THE SERVICES
+ 
+The Services constitute a technology platform that enables users of WeTrain’s mobile applications or websites provided as part of the Services (each, an “Application”) to arrange and schedule personal training and/or fitness services with third party providers of such services, including independent third party personal training providers and third party fitness providers under agreement with WeTrain or certain of WeTrain’s affiliates (“Third Party Providers”). YOU ACKNOWLEDGE THAT WETRAIN DOES NOT PROVIDE PERSONAL TRAINING OR FITNESS SERVICES OR FUNCTION AS AN EXERCISE OR FITNESS FACILITY.
+ 
+LICENSE.
+Subject to your compliance with these Terms, WeTrain grants you a limited, non-exclusive, non-sublicensable, revocable, non-transferrable license to: (i) access and use the Applications on your personal device solely in connection with your use of the Services; and (ii) access and use any content, information and related materials that may be made available through the Services, in each case solely for your personal, noncommercial use. Any rights not expressly granted herein are reserved by WeTrain and WeTrain’s licensors.
+ 
+RESTRICTIONS.
+You may not: (i) remove any copyright, trademark or other proprietary notices from any portion of the Services; (ii) reproduce, modify, prepare derivative works based upon, distribute, license, lease, sell, resell, transfer, publicly display, publicly perform, transmit, stream, broadcast or otherwise exploit the Services except as expressly permitted by WeTrain; (iii) decompile, reverse engineer or disassemble the Services except as may be permitted by applicable law; (iv) link to, mirror or frame any portion of the Services; (v) cause or launch any programs or scripts for the purpose of scraping, indexing, surveying, or otherwise data mining any portion of the Services or unduly burdening or hindering the operation and/or functionality of any aspect of the Services; or (vi) attempt to gain unauthorized access to or impair any aspect of the Services or its related systems or networks.
+ 
+THIRD PARTY SERVICES AND CONTENT.
+The Services may be made available or accessed in connection with third party services and content (including advertising) that WeTrain does not control. You acknowledge that different terms of use and privacy policies may apply to your use of such third party services and content. WeTrain does not endorse such third party services and content and in no event shall WeTrain be responsible or liable for any products or services of such third party providers. Additionally, Apple Inc. will be a third-party beneficiary to this contract if you access the Services using Applications developed for Apple iOS. The third party beneficiaries are not parties to this contract and are not responsible for the provision or support of the Services in any manner. Your access to the Services using these devices is subject to terms set forth in the applicable third party beneficiary's terms of service.
+ 
+OWNERSHIP.
+The Services and all rights therein are and shall remain WeTrain’s property or the property of WeTrain’s licensors. Neither these Terms nor your use of the Services convey or grant to you any rights: (i) in or related to the Services except for the limited license granted above; or (ii) to use or reference in any manner WeTrain’s company names, logos, product and service names, trademarks or services marks or those of WeTrain’s licensors.
+ 
+3. YOUR USE OF THE SERVICES
+ 
+USER ACCOUNTS.
+In order to use most aspects of the Services, you must register for and maintain an active personal user Services account ("Account"). You must be at least 18 years of age, or the age of legal majority in your jurisdiction (if different than 18), to obtain an Account. Account registration requires you to submit to WeTrain certain personal information, such as your name, address, mobile phone number, age, past and current medical history, and desired fitness goals, as well as at least one valid payment method (either a credit card or accepted payment partner). You agree to maintain accurate, complete, and up-to-date information in your Account. Your failure to maintain accurate, complete, and up-to-date Account information, including having an invalid or expired payment method on file, or failure to update your medical history, may result in your inability to access and use the Services or WeTrain’s termination of this Agreement with you. You are responsible for all activity that occurs under your Account, and you agree to maintain the security and secrecy of your Account username and password at all times. Unless otherwise permitted by WeTrain in writing, you may only possess one Account.
+ 
+USER REQUIREMENTS AND CONDUCT.
+The Service is not available for use by persons under the age of 18. You may not authorize third parties to use your Account, and you may not allow persons under the age of 18 to receive personal training or fitness services from Third Party Providers unless they are accompanied by you. You may not assign or otherwise transfer your Account to any other person or entity. You agree to comply with all applicable laws when using the Services. You will not in your use of the Services cause nuisance, annoyance, inconvenience, or property damage, whether to the Third Party Provider or any other party. In certain instances you may be asked to provide proof of identity to access or use the Services, and you agree that you may be denied access to or use of the Services if you refuse to provide proof of identity.
+ 
+TEXT MESSAGING.
+By creating an Account, you agree that the Services may send you informational text (SMS) messages as part of the normal business operation of your use of the Services. You may opt-out of receiving text (SMS) messages from WeTrain at any time by emailing support@wetrainphilly.com. You acknowledge that opting out of receiving text (SMS) messages may impact your use of the Services.
+ 
+PROMOTIONAL CODES.
+WeTrain may, in WeTrain’s sole discretion, create promotional codes that may be redeemed for Account credit, or other features or benefits related to the Services and/or a Third Party Provider's services, subject to any additional terms that WeTrain establishes on a per promotional code basis (“Promo Codes”). You agree that Promo Codes: (i) must be used for the intended audience and purpose, and in a lawful manner; (ii) may not be duplicated, sold or transferred in any manner, or made available to the general public (whether posted to a public form or otherwise), unless expressly permitted by WeTrain; (iii) may be disabled by WeTrain at any time for any reason without liability to WeTrain; (iv) may only be used pursuant to the specific terms that WeTrain establishes for such Promo Code; (v) are not valid for cash; and (vi) may expire prior to your use. WeTrain reserves the right to withhold or deduct credits or other features or benefits obtained through the use of Promo Codes by you or any other user in the event that WeTrain determines or believes that the use or redemption of the Promo Code was in error, fraudulent, illegal, or in violation of the applicable Promo Code terms or these Terms.
+ 
+USER PROVIDED CONTENT.
+WeTrain may, in WeTrain’s sole discretion, permit you from time to time to submit, upload, publish or otherwise make available to WeTrain through the Services textual, audio, and/or visual content and information, including commentary and feedback related to the Services, initiation of support requests, and submission of entries for competitions and promotions ("User Content"). Any User Content provided by you remains your property. However, by providing User Content to WeTrain, you grant WeTrain a worldwide, perpetual, irrevocable, transferrable, royalty-free license, with the right to sublicense, to use, copy, modify, create derivative works of, distribute, publicly display, publicly perform, and otherwise exploit in any manner such User Content in all formats and distribution channels now known or hereafter devised (including in connection with the Services and WeTrain’s business and on third-party sites and services), without further notice to or consent from you, and without the requirement of payment to you or any other person or entity.
+ 
+You represent and warrant that: (i) you either are the sole and exclusive owner of all User Content or you have all rights, licenses, consents and releases necessary to grant WeTrain the license to the User Content as set forth above; and (ii) neither the User Content nor your submission, uploading, publishing or otherwise making available of such User Content nor WeTrain’s use of the User Content as permitted herein will infringe, misappropriate or violate a third party's intellectual property or proprietary rights, or rights of publicity or privacy, or result in the violation of any applicable law or regulation.
+ 
+You agree to not provide User Content that is defamatory, libelous, hateful, violent, obscene, pornographic, unlawful, or otherwise offensive, as determined by WeTrain in its sole discretion, whether or not such material may be protected by law. WeTrain may, but shall not be obligated to, review, monitor, or remove User Content, at WeTrain’s sole discretion and at any time and for any reason, without notice to you.
+ 
+NETWORK ACCESS AND DEVICES.
+You are responsible for obtaining the data network access necessary to use the Services. Your mobile network's data and messaging rates and fees may apply if you access or use the Services from a wireless-enabled device. You are responsible for acquiring and updating compatible hardware or devices necessary to access and use the Services and Applications and any updates thereto. WeTrain does not guarantee that the Services, or any portion thereof, will function on any particular hardware or devices. In addition, the Services may be subject to malfunctions and delays inherent in the use of the Internet and electronic communications.
+ 
+4. PAYMENT
+ 
+You understand that use of the Services may result in charges to you for the services or goods you receive from a Third Party Provider (“Charges”). After you have received services or goods obtained through your use of the Service, WeTrain will facilitate your payment of the applicable Charges on behalf of the Third Party Provider, as such Third Party Provider's limited payment collection agent. Payment of the Charges in such manner shall be considered the same as payment made directly by you to the Third Party Provider. Charges will be inclusive of applicable taxes where required by law. Charges paid by you are final and non-refundable, unless otherwise determined by WeTrain. 
+ 
+All Charges are due immediately and payment will be facilitated by WeTrain using the preferred payment method designated in your Account. If your primary Account payment method is determined to be expired, invalid or otherwise not able to be charged, you agree that WeTrain may, as the Third Party Provider's limited payment collection agent, use a secondary payment method in your Account, if available.
+ 
+As between you and WeTrain, WeTrain reserves the right to establish, remove and/or revise Charges for any or all services or goods obtained through the use of the Services at any time in WeTrain’s sole discretion. WeTrain may from time to time provide certain users with promotional offers and discounts that may result in different amounts charged for the same or similar services or goods obtained through the use of the Services, and you agree that such promotional offers and discounts, unless also made available to you, shall have no bearing on your use of the Services or the Charges applied to you. You may elect to cancel your request for services or goods from a Third Party Provider at any time prior to such Third Party Provider's arrival, in which case you may be charged a cancellation fee. This payment structure is intended to fully compensate the Third Party Provider for the services or goods provided. WeTrain does not designate any portion of your payment as a tip or gratuity to the Third Party Provider. Any representation by WeTrain to the effect that tipping is “voluntary,” “not required,” and/or “included” in the payments you make for services or goods provided is not intended to suggest that WeTrain provides any additional amounts, beyond those described above, to the Third Party Provider. You understand and agree that, while you are free to provide additional payment as a gratuity to any Third Party Provider who provides you with services or goods obtained through the Service, you are under no obligation to do so. Gratuities are voluntary. After you have received services or goods obtained through the Service, you will have the opportunity to rate your experience and leave additional feedback about your Third Party Provider.
+ 
+5. DISCLAIMERS; LIMITATION OF LIABILITY; INDEMNITY.
+ 
+DISCLAIMER.
+THE SERVICES ARE PROVIDED “AS IS” AND “AS AVAILABLE.” WETRAIN DISCLAIMS ALL REPRESENTATIONS AND WARRANTIES, EXPRESS, IMPLIED, OR STATUTORY, NOT EXPRESSLY SET OUT IN THESE TERMS, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN ADDITION, WETRAIN MAKES NO REPRESENTATION, WARRANTY, OR GUARANTEE REGARDING THE RELIABILITY, TIMELINESS, QUALITY, SUITABILITY, OR AVAILABILITY OF THE SERVICES OR ANY SERVICES OR GOODS REQUESTED THROUGH THE USE OF THE SERVICES, OR THAT THE SERVICES WILL BE UNINTERRUPTED OR ERROR-FREE. WETRAIN DOES NOT GUARANTEE THE QUALITY, SUITABILITY, SAFETY OR ABILITY OF THIRD PARTY PROVIDERS. YOU AGREE THAT THE ENTIRE RISK ARISING OUT OF YOUR USE OF THE SERVICES, AND ANY SERVICE OR GOOD REQUESTED IN CONNECTION THEREWITH, REMAINS SOLELY WITH YOU, TO THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE LAW.
+ 
+LIMITATION OF LIABILITY.
+WETRAIN SHALL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE, OR CONSEQUENTIAL DAMAGES, INCLUDING LOST PROFITS, LOST DATA, PERSONAL INJURY, OR PROPERTY DAMAGE RELATED TO, IN CONNECTION WITH, OR OTHERWISE RESULTING FROM ANY USE OF THE SERVICES, EVEN IF WETRAIN HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. WETRAIN SHALL NOT BE LIABLE FOR ANY DAMAGES, LIABILITY OR LOSSES ARISING OUT OF: (i) YOUR USE OF OR RELIANCE ON THE SERVICES OR YOUR INABILITY TO ACCESS OR USE THE SERVICES; OR (ii) ANY TRANSACTION OR RELATIONSHIP BETWEEN YOU AND ANY THIRD PARTY PROVIDER, EVEN IF WETRAIN HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. WETRAIN SHALL NOT BE LIABLE FOR DELAY OR FAILURE IN PERFORMANCE RESULTING FROM CAUSES BEYOND WETRAIN’S REASONABLE CONTROL. IN NO EVENT SHALL WETRAIN’S TOTAL LIABILITY TO YOU IN CONNECTION WITH THE SERVICES FOR ALL DAMAGES, LOSSES AND CAUSES OF ACTION EXCEED ONE HUNDRED U.S. DOLLARS (US $100).
+ 
+WETRAIN’S SERVICES MAY BE USED BY YOU TO REQUEST AND SCHEDULE PERSONAL TRAINING, GOODS, OR FITNESS SERVICES WITH THIRD PARTY PROVIDERS, BUT YOU AGREE THAT WETRAIN HAS NO RESPONSIBILITY OR LIABILITY TO YOU RELATED TO ANY PERSONAL TRAINING, GOODS OR FITNESS SERVICES PROVIDED TO YOU BY THIRD PARTY PROVIDERS OTHER THAN AS EXPRESSLY SET FORTH IN THESE TERMS.
+ 
+THE LIMITATIONS AND DISCLAIMER IN THIS SECTION 5 DO NOT PURPORT TO LIMIT LIABILITY OR ALTER YOUR RIGHTS AS A CONSUMER THAT CANNOT BE EXCLUDED UNDER APPLICABLE LAW.
+ 
+INDEMNITY.
+You agree to indemnify and hold WeTrain and its officers, directors, employees, and agents harmless from any and all claims, demands, losses, liabilities, and expenses (including attorneys' fees), arising out of or in connection with: (i) your use of the Services or services or goods obtained through your use of the Services; (ii) your breach or violation of any of these Terms; (iii) WeTrain’s use of your User Content; or (iv) your violation of the rights of any third party, including Third Party Providers.
+ 
+6. DISPUTE RESOLUTION
+ 
+ARBITRATION.
+You agree that any dispute, claim or controversy arising out of or relating to these Terms or the breach, termination, enforcement, interpretation or validity thereof or the use of the Services (collectively, “Disputes”) will be settled by binding arbitration between you and WeTrain, except that each party retains the right to bring an individual action in small claims court and the right to seek injunctive or other equitable relief in a court of competent jurisdiction to prevent the actual or threatened infringement, misappropriation or violation of a party's copyrights, trademarks, trade secrets, patents or other intellectual property rights. You acknowledge and agree that you and WeTrain are each waiving the right to a trial by jury or to participate as a plaintiff or class in any purported class action or representative proceeding. Further, unless both you and WeTrain otherwise agree in writing, the arbitrator may not consolidate more than one person's claims, and may not otherwise preside over any form of any class or representative proceeding. If this specific paragraph is held unenforceable, then the entirety of this "Dispute Resolution" section will be deemed void. Except as provided in the preceding sentence, this "Dispute Resolution" section will survive any termination of these Terms.
+ 
+ARBITRATION RULES AND GOVERNING LAW.
+The arbitration will be administered by the American Arbitration Association ("AAA") in accordance with the Commercial Arbitration Rules and the Supplementary Procedures for Consumer Related Disputes (the "AAA Rules") then in effect, except as modified by this "Dispute Resolution" section. (The AAA Rules are available at www.adr.org/arb_med or by calling the AAA at 1-800-778-7879.) The Federal Arbitration Act will govern the interpretation and enforcement of this Section.
+ 
+ARBITRATION PROCESS.
+A party who desires to initiate arbitration must provide the other party with a written Demand for Arbitration as specified in the AAA Rules. (The AAA provides a form Demand for Arbitration at www.adr.org/aaa/ShowPDF?doc=ADRSTG_004175. The arbitrator will be either a retired judge or an attorney licensed to practice law in the state of Pennsylvania and will be selected by the parties from the AAA's roster of consumer dispute arbitrators. If the parties are unable to agree upon an arbitrator within seven (7) days of delivery of the Demand for Arbitration, then the AAA will appoint the arbitrator in accordance with the AAA Rules.
+ 
+ARBITRATION LOCATION AND PROCEDURE.
+Unless you and WeTrain otherwise agree, the arbitration will be conducted in Philadelphia, Pennsylvania. If your claim does not exceed $10,000, then the arbitration will be conducted solely on the basis of documents you and WeTrain submit to the arbitrator, unless you request a hearing or the arbitrator determines that a hearing is necessary. If your claim exceeds $10,000, your right to a hearing will be determined by the AAA Rules. Subject to the AAA Rules, the arbitrator will have the discretion to direct a reasonable exchange of information by the parties, consistent with the expedited nature of the arbitration.
+ 
+ARBITRATOR'S DECISION.
+The arbitrator will render an award within the time frame specified in the AAA Rules. The arbitrator's decision will include the essential findings and conclusions upon which the arbitrator based the award. Judgment on the arbitration award may be entered in any court having jurisdiction thereof. The arbitrator's award damages must be consistent with the terms of the "Limitation of Liability" section above as to the types and the amounts of damages for which a party may be held liable. The arbitrator may award declaratory or injunctive relief only in favor of the claimant and only to the extent necessary to provide relief warranted by the claimant's individual claim. If you prevail in arbitration you will be entitled to an award of attorneys' fees and expenses, to the extent provided under applicable law. WeTrain will not seek, and hereby waives all rights WeTrain may have under applicable law to recover, attorneys' fees and expenses if WeTrain prevails in arbitration.
+ 
+FEES.
+Your responsibility to pay any AAA filing, administrative and arbitrator fees will be solely as set forth in the AAA Rules. However, if your claim for damages does not exceed $75,000, WeTrain will pay all such fees unless the arbitrator finds that either the substance of your claim or the relief sought in your Demand for Arbitration was frivolous or was brought for an improper purpose (as measured by the standards set forth in Federal Rule of Civil Procedure 11(b)).
+ 
+CHANGES.
+Notwithstanding the provisions of the modification-related provisions above, if WeTrain changes this "Dispute Resolution" section after the date you first accepted these Terms (or accepted any subsequent changes to these Terms), you may reject any such change by providing WeTrain written notice of such rejection by email from the email address associated with your Account to support@wetrainphilly.com within 30 days of the date such change became effective, as indicated in the "Last update" date above. In order to be effective, the notice must include your full name and clearly indicate your intent to reject changes to this "Dispute Resolution" section. By rejecting changes, you are agreeing that you will arbitrate any Dispute between you and WeTrain in accordance with the provisions of this "Dispute Resolution" section as of the date you first accepted these Terms (or accepted any subsequent changes to these Terms).
+ 
+7. OTHER PROVISIONS
+ 
+CHOICE OF LAW.
+These Terms are governed by and construed in accordance with the laws of the State of Pennsylvania, U.S.A., without giving effect to any conflict of law principles.
+ 
+NOTICE.
+WeTrain may give notice by means of a general notice on the Services, electronic mail to your email address in your Account, or by written communication sent by first class mail or pre-paid post to your address in your Account.
+ 
+GENERAL.
+You may not assign these Terms without WeTrain’s prior written approval. WeTrain may assign these Terms without your consent to: (i) a subsidiary or affiliate; (ii) an acquirer of WeTrain’s equity, business or assets; or (iii) a successor by merger. Any purported assignment in violation of this section shall be void. No joint venture, partnership, employment, or agency relationship exists between you, WeTrain or any Third Party Provider as a result of this Agreement or use of the Services. If any provision of these Terms is held to be invalid or unenforceable, such provision shall be struck and the remaining provisions shall be enforced to the fullest extent under law. WeTrain’s failure to enforce any right or provision in these Terms shall not constitute a waiver of such right or provision unless acknowledged and agreed to by WeTrain in writing.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="y45-Ga-bkb" firstAttribute="top" secondItem="XOy-wi-pAs" secondAttribute="bottom" constant="13" id="1PB-qk-EuH"/>
+                                                    <constraint firstItem="MKP-bV-k8N" firstAttribute="leading" secondItem="DhG-7P-k4I" secondAttribute="leading" constant="20" id="2gn-gG-ZcQ"/>
+                                                    <constraint firstItem="4Wp-QB-dTM" firstAttribute="leading" secondItem="DhG-7P-k4I" secondAttribute="leading" constant="20" id="2ir-aL-hgY"/>
+                                                    <constraint firstItem="SSF-3c-n76" firstAttribute="top" secondItem="y45-Ga-bkb" secondAttribute="bottom" constant="14" id="4i5-PJ-H8j"/>
+                                                    <constraint firstItem="XOy-wi-pAs" firstAttribute="leading" secondItem="DhG-7P-k4I" secondAttribute="leading" constant="20" id="79c-qG-w0f"/>
+                                                    <constraint firstItem="XOy-wi-pAs" firstAttribute="top" secondItem="UYw-87-AAf" secondAttribute="bottom" constant="58" id="8zf-KA-pF7"/>
+                                                    <constraint firstItem="y7e-uc-f87" firstAttribute="leading" secondItem="DhG-7P-k4I" secondAttribute="leading" constant="20" id="9Bn-hJ-5Au"/>
+                                                    <constraint firstItem="jTn-I1-6st" firstAttribute="leading" secondItem="DhG-7P-k4I" secondAttribute="leading" constant="20" id="AGj-1g-SfC"/>
+                                                    <constraint firstItem="MKP-bV-k8N" firstAttribute="top" secondItem="jhW-QI-qjs" secondAttribute="bottom" constant="9" id="AMk-EV-bJM"/>
+                                                    <constraint firstAttribute="trailing" secondItem="meJ-HK-GrD" secondAttribute="trailing" constant="20" id="Aha-c8-4Ip"/>
+                                                    <constraint firstAttribute="trailing" secondItem="XOy-wi-pAs" secondAttribute="trailing" constant="20" id="Ala-md-grM"/>
+                                                    <constraint firstAttribute="trailing" secondItem="MKP-bV-k8N" secondAttribute="trailing" constant="20" id="CRB-Po-q1E"/>
+                                                    <constraint firstItem="UYw-87-AAf" firstAttribute="leading" secondItem="DhG-7P-k4I" secondAttribute="leading" constant="20" id="CSS-kO-Tvz"/>
+                                                    <constraint firstAttribute="trailing" secondItem="4Wp-QB-dTM" secondAttribute="trailing" constant="20" id="DnV-UO-fDI"/>
+                                                    <constraint firstAttribute="trailing" secondItem="UYw-87-AAf" secondAttribute="trailing" constant="20" id="E2u-WQ-SNu"/>
+                                                    <constraint firstItem="CC7-6k-vjo" firstAttribute="leading" secondItem="DhG-7P-k4I" secondAttribute="leading" constant="20" id="FnK-aK-FSe"/>
+                                                    <constraint firstAttribute="trailing" secondItem="y7e-uc-f87" secondAttribute="trailing" constant="20" id="HJj-th-14l"/>
+                                                    <constraint firstAttribute="trailing" secondItem="jTn-I1-6st" secondAttribute="trailing" constant="20" id="Hiq-Sb-GES"/>
+                                                    <constraint firstItem="jhW-QI-qjs" firstAttribute="leading" secondItem="DhG-7P-k4I" secondAttribute="leading" constant="12" id="Htc-ks-K3T"/>
+                                                    <constraint firstItem="4Wp-QB-dTM" firstAttribute="top" secondItem="SSF-3c-n76" secondAttribute="bottom" constant="13" id="LB9-Fj-06f"/>
+                                                    <constraint firstItem="SSF-3c-n76" firstAttribute="leading" secondItem="DhG-7P-k4I" secondAttribute="leading" constant="20" id="MWG-pE-SmN"/>
+                                                    <constraint firstItem="JxQ-eA-chR" firstAttribute="leading" secondItem="DhG-7P-k4I" secondAttribute="leading" constant="20" id="Md0-G7-PEo"/>
+                                                    <constraint firstItem="jhW-QI-qjs" firstAttribute="top" secondItem="Xz7-4x-nfI" secondAttribute="bottom" constant="13" id="N0Q-Bq-FB9"/>
+                                                    <constraint firstItem="y45-Ga-bkb" firstAttribute="leading" secondItem="DhG-7P-k4I" secondAttribute="leading" constant="20" id="Pwz-8s-I7g"/>
+                                                    <constraint firstAttribute="trailing" secondItem="JxQ-eA-chR" secondAttribute="trailing" constant="20" id="UaI-sf-dLd"/>
+                                                    <constraint firstItem="meJ-HK-GrD" firstAttribute="top" secondItem="4Wp-QB-dTM" secondAttribute="bottom" constant="13" id="VnI-UU-lYL"/>
+                                                    <constraint firstItem="CC7-6k-vjo" firstAttribute="top" secondItem="DhG-7P-k4I" secondAttribute="top" constant="26" id="Xk8-bQ-oBg"/>
+                                                    <constraint firstItem="Xz7-4x-nfI" firstAttribute="leading" secondItem="DhG-7P-k4I" secondAttribute="leading" constant="20" id="YKT-kI-8gS"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Xz7-4x-nfI" secondAttribute="trailing" constant="20" id="YR5-Vq-BwN"/>
+                                                    <constraint firstItem="JxQ-eA-chR" firstAttribute="top" secondItem="NEP-cL-Rcg" secondAttribute="bottom" constant="28" id="ZMW-Kc-udt"/>
+                                                    <constraint firstAttribute="trailing" secondItem="y45-Ga-bkb" secondAttribute="trailing" constant="20" id="aIk-ww-kxB"/>
+                                                    <constraint firstItem="NEP-cL-Rcg" firstAttribute="leading" secondItem="CC7-6k-vjo" secondAttribute="trailing" constant="8" id="bA1-Vc-gqr"/>
+                                                    <constraint firstItem="jTn-I1-6st" firstAttribute="top" secondItem="meJ-HK-GrD" secondAttribute="bottom" constant="13" id="bl1-b8-8CB"/>
+                                                    <constraint firstAttribute="trailing" secondItem="jhW-QI-qjs" secondAttribute="trailing" constant="20" id="cTq-z3-aWo"/>
+                                                    <constraint firstItem="NEP-cL-Rcg" firstAttribute="top" secondItem="DhG-7P-k4I" secondAttribute="top" constant="36" id="d4d-NI-5hq"/>
+                                                    <constraint firstItem="meJ-HK-GrD" firstAttribute="leading" secondItem="DhG-7P-k4I" secondAttribute="leading" constant="20" id="e3j-0a-wY3"/>
+                                                    <constraint firstAttribute="trailing" secondItem="SSF-3c-n76" secondAttribute="trailing" constant="20" id="kRN-fR-jcO"/>
+                                                    <constraint firstAttribute="height" constant="800" id="nXb-9f-h3Y"/>
+                                                    <constraint firstItem="UYw-87-AAf" firstAttribute="top" secondItem="JxQ-eA-chR" secondAttribute="bottom" constant="6" id="oZh-eu-ZEs"/>
+                                                    <constraint firstItem="y7e-uc-f87" firstAttribute="top" secondItem="UYw-87-AAf" secondAttribute="bottom" constant="15" id="q3f-kq-LnM"/>
+                                                    <constraint firstItem="Xz7-4x-nfI" firstAttribute="top" secondItem="jTn-I1-6st" secondAttribute="bottom" constant="13" id="sbv-UA-IbK"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="DhG-7P-k4I" firstAttribute="leading" secondItem="86m-9D-qAA" secondAttribute="leading" id="8at-v0-Isw"/>
+                                            <constraint firstItem="DhG-7P-k4I" firstAttribute="top" secondItem="86m-9D-qAA" secondAttribute="top" id="N6Y-If-cuV"/>
+                                            <constraint firstAttribute="trailing" secondItem="DhG-7P-k4I" secondAttribute="trailing" id="Vlb-Jc-OXS"/>
+                                            <constraint firstItem="DhG-7P-k4I" firstAttribute="width" secondItem="86m-9D-qAA" secondAttribute="width" id="mBM-dc-TGy"/>
+                                            <constraint firstAttribute="bottom" secondItem="DhG-7P-k4I" secondAttribute="bottom" id="t0j-aH-bzD"/>
+                                        </constraints>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="68" width="600" height="732"/>
+                                        </variation>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="86m-9D-qAA" secondAttribute="bottom" constant="-64" id="2aD-wN-2xv"/>
+                                    <constraint firstItem="86m-9D-qAA" firstAttribute="top" secondItem="ne6-W1-256" secondAttribute="top" id="4v9-ws-Pj0"/>
+                                    <constraint firstAttribute="trailing" secondItem="86m-9D-qAA" secondAttribute="trailing" id="Jvw-u1-lvB"/>
+                                    <constraint firstItem="86m-9D-qAA" firstAttribute="leading" secondItem="ne6-W1-256" secondAttribute="leading" id="NX3-W7-Cx2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ne6-W1-256" firstAttribute="leading" secondItem="IvC-Eu-JZC" secondAttribute="leading" id="8iG-dn-kJp"/>
+                            <constraint firstItem="ne6-W1-256" firstAttribute="top" secondItem="IvC-Eu-JZC" secondAttribute="top" id="Fnc-Bg-laD"/>
+                            <constraint firstAttribute="trailing" secondItem="ne6-W1-256" secondAttribute="trailing" id="W8Z-Sz-SzO"/>
+                            <constraint firstItem="HRJ-Sv-LQi" firstAttribute="top" secondItem="ne6-W1-256" secondAttribute="bottom" id="gCR-jb-Up0"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="User Info" id="bcg-F2-jiY"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="buttonEditPhoto" destination="NEP-cL-Rcg" id="LN3-5p-fgA"/>
+                        <outlet property="buttonPhotoView" destination="CC7-6k-vjo" id="pKR-Qd-ogs"/>
+                        <outlet property="buttonTOS" destination="REf-vU-8XM" id="8nN-dq-03e"/>
+                        <outlet property="constraintContentHeight" destination="nXb-9f-h3Y" id="B3V-k2-Qnk"/>
+                        <outlet property="constraintScrollContentTopOffset" destination="N6Y-If-cuV" id="RBn-FJ-qdf"/>
+                        <outlet property="constraintScrollTopOffset" destination="Fnc-Bg-laD" id="PXH-4H-Mob"/>
+                        <outlet property="constraintTopOffset" destination="8zf-KA-pF7" id="J9u-QZ-6ls"/>
+                        <outlet property="inputAge" destination="meJ-HK-GrD" id="EXS-fR-SQa"/>
+                        <outlet property="inputCreditCard" destination="y45-Ga-bkb" id="E5k-c0-ewo"/>
+                        <outlet property="inputEmail" destination="y7e-uc-f87" id="jAp-Ev-DGc"/>
+                        <outlet property="inputFirstName" destination="SSF-3c-n76" id="Gcp-DZ-Qp5"/>
+                        <outlet property="inputGender" destination="jTn-I1-6st" id="YZI-p7-OhN"/>
+                        <outlet property="inputInjuries" destination="Xz7-4x-nfI" id="H2a-Wt-zX8"/>
+                        <outlet property="inputLastName" destination="4Wp-QB-dTM" id="tJa-qb-0yt"/>
+                        <outlet property="inputPhone" destination="XOy-wi-pAs" id="ilB-an-Kqc"/>
+                        <outlet property="lblAcceptTOS" destination="ey9-bh-e8Y" id="euB-ko-EUG"/>
+                        <outlet property="scrollView" destination="86m-9D-qAA" id="z0M-Xo-nR4"/>
+                        <outlet property="txtTOS" destination="MKP-bV-k8N" id="EgK-ao-3w6"/>
+                        <outlet property="viewScrollContent" destination="DhG-7P-k4I" id="hyP-BO-t6m"/>
+                        <outlet property="viewTOS" destination="jhW-QI-qjs" id="Agv-oh-VRJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CgM-iP-tNb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1423" y="258"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LoginBg" width="600" height="273"/>
+        <image name="add_user" width="512" height="512"/>
+        <image name="boxChecked" width="94" height="94"/>
+        <image name="boxUnchecked" width="94" height="94"/>
+        <image name="buttonRectBg" width="1100" height="196"/>
+        <image name="buttonRectSelBg" width="1100" height="196"/>
+        <image name="fbIcon" width="75" height="76"/>
+        <image name="fbLoginButtonBg" width="1100" height="196"/>
+        <image name="fbLoginButtonSelBg" width="1100" height="196"/>
+        <image name="logoBlack" width="600" height="298"/>
+        <image name="rectTextBg" width="600" height="60"/>
+        <image name="runnerBG" width="1168" height="1728"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="a1O-Ae-xve"/>
+    </inferredMetricsTieBreakers>
+</document>
